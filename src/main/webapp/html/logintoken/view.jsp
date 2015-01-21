@@ -84,7 +84,7 @@ jQ(document).ready( function() {
                 }
 
                 parentContainer.hide();
-                parentContainer.html( '<div class="generated-token-instruction">Copy this token to your application. It wont be shown again.</div><div class="generated-token"><span class="new-token" data-token="' + jsonResp.token + '">' + token + '</span></div>' );
+                parentContainer.html( '<div class="generated-token-instruction">Copy this token to your application without spaces and dashes. It wont be shown again.</div><div class="generated-token"><span class="new-token" data-token="' + jsonResp.token + '">' + token + '</span></div>' );
                 parentContainer.fadeIn();
             }
         });
