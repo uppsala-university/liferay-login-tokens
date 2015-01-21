@@ -2,21 +2,21 @@
 
 <portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
 	<portlet>
-		<portlet-name>lr-login-tokens</portlet-name>
-		<display-name>lr-login-tokens</display-name>
-		<portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
+		<portlet-name>LoginTokenPortlet</portlet-name>
+		<display-name>Login Tokens</display-name>
+		<portlet-class>se.uu.liferay.portlet.LoginTokenPortlet</portlet-class>
 		<init-param>
-			<name>view-template</name>
-			<value>/view.jsp</value>
+			<name>view-jsp</name>
+			<value>/html/logintoken/view.jsp</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
 		</supports>
 		<portlet-info>
-			<title>lr-login-tokens</title>
-			<short-title>lr-login-tokens</short-title>
-			<keywords>lr-login-tokens</keywords>
+			<title>Login Tokens</title>
+			<short-title>Login Tokens</short-title>
+			<keywords>login tokens</keywords>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>administrator</role-name>
