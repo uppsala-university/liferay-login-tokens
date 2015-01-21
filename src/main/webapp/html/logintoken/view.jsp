@@ -36,12 +36,11 @@ You're also eliminating the risk of someone decrypting your master password if y
     </table>
 </div>
 
-
 <h2>Generate new</h2>
 <div class="generate-wrapper">
     To generate a new token, fill out a description below.
-    <span style="background: yellow; display:block">TODO: Before being able to generate one should authenticate again!</span>
-    <span style="background: yellow; display:block">TODO: Add copy to clipboard (without - ) on click!</span>
+    <!--TODO: Before being able to generate one should authenticate again!
+    TODO: Add copy to clipboard (without - ) on click!-->
     <div class="generate-form">
         <input type="text" class="description"/>
         <span class="btn btn-primary generate-token-button">Generate</span>
@@ -59,18 +58,15 @@ jQ(document).ready( function() {
             type: "POST",
             url: "${revokeTokenURL}",
             data: {
-                //description: $this.parents('tr').find('.token-description').html()
                 created: $this.data( 'created' )
             },
             success: function(data) {
-                console.log( 'considered a success');
                 $this.parents('tr').fadeOut();
             }
         });
     });
 
     jQ( '.generate-token-button' ).on('click', function() {
-        console.log("Trying to generate a new token");
         var $this = jQ( this );
         jQ.ajax({
             type: "POST",
@@ -79,7 +75,6 @@ jQ(document).ready( function() {
                 description: jQ( 'input.description').val()
             },
             success: function(data) {
-                console.log( 'considered a success');
                 var jsonResp = jQuery.parseJSON( data );
                 var parentContainer = $this.parents('.generate-wrapper');
                 //Make the token visually readable
