@@ -26,7 +26,7 @@ public class LoginTokenPortlet extends MVCPortlet {
             request.setAttribute("tokens", LoginToken.getLoginTokens(themeDisplay.getUser()));
             this.include(viewJSP, request, response);
         } else {
-            this.include("/html/loginportlet/empty.jsp", request, response);
+            this.include("/html/logintoken/empty.jsp", request, response);
         }
     }
 

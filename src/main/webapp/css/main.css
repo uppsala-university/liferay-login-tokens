@@ -1,0 +1,33 @@
+.generate-form {
+    margin-bottom: 20px;
+}
+
+.new-token {
+    background-color: #efefef;
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+.generated-token {
+    margin-bottom: 20px;
+}
+
+.generated-token-instruction {
+    margin-bottom: 20px;
+}
+
+input.description {
+    margin-bottom: 0 !important;
+}
+
+.existing-tokens-table td, .existing-tokens-table th {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.existing-tokens-table tr:nth-child(odd) {
+    background-color: #DDD;
+}
+
+.existing-tokens-table {
+    border: 1px solid #AAA;
+}
